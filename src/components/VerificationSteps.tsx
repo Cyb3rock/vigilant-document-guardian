@@ -78,7 +78,7 @@ const VerificationSteps = ({ steps }: VerificationStepsProps) => {
                         className="animate-pulse" 
                       />
                     </div>
-                  ) : step.status !== "pending" ? (
+                  ) : step.status === "completed" || step.status === "failed" ? (
                     <div className="w-16 h-2">
                       <Progress 
                         value={step.score} 
