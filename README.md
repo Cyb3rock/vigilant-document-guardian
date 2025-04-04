@@ -2,7 +2,7 @@
 
 ## 📘 Project Info
 
-**URL**: https://github.com/yourusername/document-verification-system  
+**URL**: [https://github.com/yourusername/document-verification-system ](https://github.com/Cyb3rock/vigilant-document-guardian.git) 
 (A public GitHub repo to automate document validation using ML & OCR)
 
 ## ✨ What does this project do?
