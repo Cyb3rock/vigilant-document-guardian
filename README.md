@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# 👋 Welcome to your Document Verification System
 
-## Project info
+## 📘 Project Info
 
-**URL**: https://lovable.dev/projects/4d536ea8-621f-44b4-986b-70656be38408
+**URL**: https://github.com/yourusername/document-verification-system  
+(A public GitHub repo to automate document validation using ML & OCR)
 
-## How can I edit this code?
+## ✨ What does this project do?
 
-There are several ways of editing your application.
+This system helps detect **forged or tampered documents** using a combination of **Optical Character Recognition (OCR)** and **Machine Learning**. Ideal for use in academic institutions, HR departments, and enterprises where document verification is critical.
 
-**Use Lovable**
+## 🛠️ How can I edit this code?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4d536ea8-621f-44b4-986b-70656be38408) and start prompting.
+There are multiple ways to make changes or contribute to this project.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🧠 Use GitHub (directly)
 
-**Use your preferred IDE**
+- Navigate to any file you want to edit.
+- Click the ✏️ pencil icon at the top-right.
+- Make your changes and commit them—simple as that!
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 💻 Use your preferred IDE
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Prefer working locally? Follow these steps:
 
-Follow these steps:
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/document-verification-system.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 2: Move into the project directory
+cd document-verification-system
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 3: Install Python dependencies
+pip install -r requirements.txt
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Step 4: Run the verification tool
+python verify.py --image_path path/to/document.jpg
 ```
 
-**Edit a file directly in GitHub**
+> 🧠 Make sure [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) is installed on your system.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 🧑‍💻 Use GitHub Codespaces
 
-**Use GitHub Codespaces**
+Want to spin up an instant dev environment?
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Click on the green **Code** button on the repo
+- Select **Codespaces**
+- Click **New codespace**
+- Start editing right in the browser with full IDE capabilities!
 
-## What technologies are used for this project?
+## 🧰 What technologies are used for this project?
 
-This project is built with:
+This project is built using:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- 🐍 **Python**
+- 🧠 **scikit-learn / TensorFlow** (for ML)
+- 🔍 **Tesseract OCR** via `pytesseract`
+- 🖼️ **OpenCV**
+- 🌐 **Flask** (for optional API)
 
-## How can I deploy this project?
+## 🚀 How can I run the web version?
 
-Simply open [Lovable](https://lovable.dev/projects/4d536ea8-621f-44b4-986b-70656be38408) and click on Share -> Publish.
+Want a web-based interface?
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+python app.py
+```
 
-Yes it is!
+Visit `http://localhost:5000` to upload and verify documents via a simple UI.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧠 Can this be deployed?
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Absolutely! You can deploy the web app using:
+
+- **Heroku**
+- **Render**
+- **Railway**
+- Or host it on your own server with `gunicorn` or `uvicorn`
+
+## 💡 Want to contribute?
+
+Pull requests, suggestions, and forks are always welcome! Feel free to [open an issue](https://github.com/yourusername/document-verification-system/issues) if you spot bugs or want to request features.
